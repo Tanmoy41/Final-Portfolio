@@ -254,58 +254,7 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.projects, .contact, .about{
-    color:#fff;
-    background: #111;
-}
-.services {
-    background: url(images/skills.jpg)no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.services .title::before,
-.projects .title::before,
-.skills .title::before,
-.about .title::before,
-.contact .title::before{
-    background: #fff;
-}
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 35px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 3px 2px gray;
-}
-.services .serv-content .card:hover{
-    background: fuchsia;
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card i{
-    font-size: 50px;
-    color: fuchsia;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
-}
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
+/* skills section styling */
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -379,6 +328,59 @@ section .title::after{
 }
 .skills-content .right .mysql::before{
     width: 30%;
+}
+
+/* services section styling */
+.projects, .contact, .about{
+    color:#fff;
+    background: #111;
+}
+.services {
+    background: url(images/skills.jpg)no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.services .title::before,
+.projects .title::before,
+.skills .title::before,
+.about .title::before,
+.contact .title::before{
+    background: #fff;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 35px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 3px 2px gray;
+}
+.services .serv-content .card:hover{
+    background: fuchsia;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: fuchsia;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* projects section styling */
@@ -561,6 +563,9 @@ footer{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .services{
+        height: 100%;
+    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -584,6 +589,9 @@ footer{
     .services .serv-content .card{
         width: 100%;
     }
+    .services{
+        height: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -592,6 +600,9 @@ footer{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .services{
+        height: 100%;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
