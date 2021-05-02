@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -71,7 +71,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: fuchsia;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -255,7 +255,7 @@ section .title::after{
 }
 
 /* services section styling */
-.teams, .contact, .teams, .about{
+.projects, .contact, .about{
     color:#fff;
     background: #111;
 }
@@ -268,7 +268,7 @@ section .title::after{
     background-attachment: fixed;
 }
 .services .title::before,
-.teams .title::before,
+.projects .title::before,
 .skills .title::before,
 .about .title::before,
 .contact .title::before{
@@ -282,6 +282,7 @@ section .title::after{
     padding: 35px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 3px 2px gray;
 }
 .services .serv-content .card:hover{
     background: fuchsia;
@@ -380,34 +381,35 @@ section .title::after{
     width: 30%;
 }
 
-/* teams section styling */
-.teams .carousel .card{
+/* projects section styling */
+.projects .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    box-shadow: 3px 5px gray;
 }
-.teams .carousel .card:hover{
+.projects .carousel .card:hover{
     background: fuchsia;
 }
-.teams .carousel .card .box{
+.projects .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.projects .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -415,7 +417,7 @@ section .title::after{
     border: 5px solid fuchsia;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.projects .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -438,6 +440,10 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: fuchsia!important;
+}
+a {
+    color: crimson;
+    font-weight: bold;
 }
 
 /* contact section styling */
@@ -465,88 +471,24 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: fuchsia;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: crimson;
 }
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button-area{
-  display: flex;
-  align-items: center;
-}
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
-}
-.right form .button-area button:hover{
-  color: crimson;
-  background: none;
+.address {
+    justify-content: center;
 }
 /* footer section styling */
 footer{
     background: #111;
     padding: 15px 23px;
-    color: #fff;
+    color: crimson;
     text-align: center;
 }
-footer span a{
-    color: crimson;
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
-
 
 /* responsive media query start */
 @media (max-width: 1104px) {
